@@ -2,7 +2,7 @@
 
 set -x
 
-python -c 'import cpp; print cpp.Frob().get_foo()'
+python -c 'import cpp; foo = cpp.Foo("foo")'
 
-python -c 'import cpp; print cpp.Frob().get_foo().bar()'
+python -c 'import cpp; frob = cpp.Frob(); foo = cpp.Foo("foo"); frob.set_foo(foo); print frob.get_foo().bar()'
 
