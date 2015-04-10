@@ -9,9 +9,10 @@ public:
   Foo(std::string name);
   ~Foo();
 
-  std::string bar();
+  std::string bar() const;
 
   typedef MYLIB_SHARED_PTR_NSPACE::shared_ptr<Foo> Ptr;
+  typedef MYLIB_SHARED_PTR_NSPACE::shared_ptr<const Foo> ConstPtr;
 private:
   std::string m_name;
 };

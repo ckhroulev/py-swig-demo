@@ -12,7 +12,7 @@ Foo::~Foo() {
   std::cout << "Foo '" << m_name << "' destructor is called!" << std::endl;
 }
 
-std::string Foo::bar() {
+std::string Foo::bar() const {
   return std::string("hello from '" + m_name + "' (Foo::bar())!");
 }
 
