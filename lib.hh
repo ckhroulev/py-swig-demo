@@ -20,6 +20,7 @@ private:
 class Frob {
 public:
   Foo::Ptr get_foo();
+  Foo::ConstPtr get_const_foo();
   void set_foo(Foo::Ptr foo);
 private:
   Foo::Ptr m_foo;

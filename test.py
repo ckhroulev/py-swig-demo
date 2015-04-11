@@ -21,6 +21,8 @@ print "done"
 
 print "Calling a method of Foo..."
 print frob.get_foo().bar()
+print frob.get_const_foo()
+print frob.get_const_foo().bar()
 
 print "Testing destruction at the end of scope..."
 scope_test()

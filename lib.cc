@@ -20,6 +20,10 @@ Foo::Ptr Frob::get_foo() {
   return m_foo;
 }
 
+Foo::ConstPtr Frob::get_const_foo() {
+  return m_foo;
+}
+
 void Frob::set_foo(Foo::Ptr foo) {
   m_foo = foo;
 }
